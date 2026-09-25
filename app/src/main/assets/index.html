@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1026" />
+  <title>MindSpark IQ Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <b><i>✦</i> MindSpark</b>
+      <small>● Brain training mode</small>
+    </header>
+
+    <section id="home" class="screen active">
+      <div class="hero">
+        <p class="eyebrow">A quick challenge for your curious mind</p>
+        <h1>How sharp is<br><span>your thinking?</span></h1>
+        <p>Test your logic, pattern recognition and speed in this fun, game-style IQ challenge.</p>
+        <button class="primary" id="start">Start the challenge <strong>→</strong></button>
+        <small class="meta">◷ 5 min • 10 questions</small>
+      </div>
+      <div class="orb">✺</div>
+    </section>
+
+    <section id="quiz" class="screen">
+      <div class="quiz-top">
+        <div>
+          <p class="eyebrow">MindSpark challenge</p>
+          <h2>Question <span id="num">1</span><em>/ 10</em></h2>
+        </div>
+        <strong class="timer">◷ <span id="time">30</span>s</strong>
+      </div>
+      <div class="track"><i id="progress"></i></div>
+      <article>
+        <label id="type"></label>
+        <h3 id="question"></h3>
+        <div id="visual" class="visual"></div>
+        <div id="answers" class="answers"></div>
+        <button class="primary next" id="next" disabled>Lock in answer →</button>
+      </article>
+      <p class="tip">✦ Trust your first instinct. There are no trick questions.</p>
+    </section>
+
+    <section id="result" class="screen result">
+      <p class="eyebrow">Challenge complete</p>
+      <h2>Your mind is <span id="mood">on fire!</span></h2>
+      <p id="message"></p>
+      <div class="result-box">
+        <div class="score">
+          <div><b id="score">0</b><small>/ 100</small></div>
+          <span>MindSpark score</span>
+        </div>
+        <div class="stats">
+          <p>Correct answers <b id="correct"></b></p>
+          <p>Thinking style <b id="style"></b></p>
+          <p>Best category <b id="category"></b></p>
+        </div>
+      </div>
+      <button class="primary" id="again">Play again ↻</button>
+      <button class="secondary" id="share">Share result ↗</button>
+      <p id="note"></p>
+    </section>
+
+    <footer>MindSpark <i>•</i> Built for curious minds</footer>
+  </main>
+
+  <script src="ads-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
